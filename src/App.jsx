@@ -10,6 +10,10 @@ function App() {
     };
   }
 
+  function resetGreeting() {
+    setGreeting("Greeting Message");
+  }
+
   return (
     <div className="App">
       <div className="greeting-container">{greeting}</div>
@@ -17,6 +21,7 @@ function App() {
         <button onClick={handleClick("สวัสดี!")}>สวัสดี!</button>
         <button onClick={handleClick("Hi!")}>Hi!</button>
         <button onClick={handleClick("你好!")}>你好!</button>
+        <button onClick={resetGreeting}>Reset</button>
       </div>
     </div>
   );
